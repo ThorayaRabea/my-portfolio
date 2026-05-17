@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect, useRef } from "react";
 
 const PROJECTS = [
@@ -123,15 +122,7 @@ function useInView(threshold = 0.15) {
   return [ref, inView];
 }
 
-function Reveal({
-  children,
-  delay = 0,
-  y = 30,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  y?: number;
-}) {
+function Reveal({ children, delay = 0, y = 30 }) {
   const [ref, inView] = useInView();
   return (
     <div
