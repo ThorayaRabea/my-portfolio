@@ -14,6 +14,15 @@ const PROJECTS = [
   },
   {
     num: "02",
+    title: "E-Commerce Admin Dashboard",
+    img: "/dashboard.jpg",
+    tech: ["Next.js", "TypeScript", "Redux Toolkit", "MUI", "Figma to Code"],
+    description: "Pixel-perfect admin dashboard built from a Figma design — real-time charts, customer management, product CRUD, and role-based access, integrated with a live REST API.",
+    github: "https://github.com/ThorayaRabea/ecommerce-dashboard",
+    live: "https://ecommerce-dashboard-eight-sandy.vercel.app",
+  },
+  {
+    num: "03",
     title: "E-Commerce Platform",
     img: "/ecommerce.jpg",
     tech: ["React.js", "Context API", "TanStack Query", "Formik", "Yup", "Axios"],
@@ -22,7 +31,7 @@ const PROJECTS = [
     live: "https://ecommerce-react-app-coral.vercel.app",
   },
   {
-    num: "03",
+    num: "04",
     title: "Games Collection",
     img: "/games.jpg",
     tech: ["JavaScript", "DOM Manipulation", "CSS3"],
@@ -31,7 +40,7 @@ const PROJECTS = [
     live: "https://games-two-nu.vercel.app",
   },
   {
-    num: "04",
+    num: "05",
     title: "Weather App",
     img: "/weather.jpg",
     tech: ["JavaScript", "OpenWeather API", "CSS3"],
@@ -40,7 +49,6 @@ const PROJECTS = [
     live: "https://weather-gamma-six-85.vercel.app",
   },
 ];
-
 const SKILLS = [
   { label: "Frontend", items: ["React.js", "Next.js", "JavaScript ES6+", "TypeScript", "HTML5", "CSS3", "Sass"] },
   { label: "State & Data", items: ["Redux Toolkit", "Context API", "TanStack Query", "Axios"] },
