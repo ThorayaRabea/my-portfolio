@@ -3,17 +3,26 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const PROJECTS = [
+    {
+    title: "Exam App",
+    img: "/exam.jpg",
+    tech: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "TanStack Query", "React Hook Form", "Zod"],
+    description: "Online exam platform: student portal with OTP registration, timed exams with auto-submit and scored results, plus an admin dashboard with data tables, CRUD, image upload, and exam/question management.",
+    github: "https://github.com/ThorayaRabea/exam-app",
+    live: "https://exam-app-three-liart.vercel.app",
+    demo: "Admin demo → elevateadmin / Elevate@123",
+  },
   {
-    num: "01",
+   
     title: "Social Media App",
     img: "/social.jpg",
     tech: ["Next.js", "React", "TypeScript", "Redux Toolkit", "MUI", "Axios", "Formik"],
     description: "Full-featured social platform with authentication, profile management, CRUD posts, real-time likes/comments, and Follow/Unfollow social graph.",
-    github: "https://github.com/ThorayaRabea/social-medi",
+    github: "https://github.com/ThorayaRabea/social-media-nextjs",
     live: "https://social-media-nextjs-blond.vercel.app",
   },
   {
-    num: "02",
+  
     title: "E-Commerce Admin Dashboard",
     img: "/dashboard.jpg",
     tech: ["Next.js", "TypeScript", "Redux Toolkit", "MUI", "Figma to Code"],
@@ -22,7 +31,7 @@ const PROJECTS = [
     live: "https://ecommerce-dashboard-eight-sandy.vercel.app",
   },
   {
-    num: "03",
+   
     title: "E-Commerce Platform",
     img: "/ecommerce.jpg",
     tech: ["React.js", "Context API", "TanStack Query", "Formik", "Yup", "Axios"],
@@ -31,7 +40,7 @@ const PROJECTS = [
     live: "https://ecommerce-react-app-coral.vercel.app",
   },
   {
-    num: "04",
+   
     title: "Games Collection",
     img: "/games.jpg",
     tech: ["JavaScript", "DOM Manipulation", "CSS3"],
@@ -378,6 +387,7 @@ export default function Portfolio() {
                   <p className="proj-num-badge">{p.num}</p>
                   <h3 className="proj-title">{p.title}</h3>
                   <p className="proj-desc">{p.description}</p>
+                  {p.demo && <p style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:"11px", color:"#c8935a", marginBottom:"16px" }}>{p.demo}</p>}
                   <div style={{ marginBottom:"20px" }}>
                     {p.tech.map(t=><span key={t} className="tag">{t}</span>)}
                   </div>
